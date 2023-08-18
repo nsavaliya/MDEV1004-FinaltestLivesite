@@ -5,8 +5,7 @@
   "author": "Namrata Savaliya",
   "engines": {
     "node": "20.2.0",
-    "npm": "9.5.1",
-    "yarn": "1.22.19"
+    "npm": "9.5.1"
   },
   "scripts": {
     "start": "node server.js"
