@@ -1,12 +1,12 @@
 {
   "name": "mdev1004-m2023-finaltest",
-  "version": "0.0.9",
-  "description": "This is a demo project for MDEV1004 - finaltest - in the Summer 2023 semester at Georgian",
+  "version": "0.0.8",
+  "description": "this is a demo project for MDEV1004 - Final Test- in the summer 2023 semester at Georgian",
   "author": "Namrata Savaliya",
   "engines": {
     "node": "20.2.0",
-    "npm": "9.6.6"
-    
+    "npm": "9.5.1",
+    "yarn": "1.22.19"
   },
   "scripts": {
     "start": "node server.js"
@@ -22,7 +22,7 @@
     "express-session": "^1.17.3",
     "http-errors": "^2.0.0",
     "jsonwebtoken": "^9.0.1",
-    "mongoose": "^7.4.3",
+    "mongoose": "^7.2.2",
     "morgan": "^1.10.0",
     "passport": "^0.6.0",
     "passport-jwt": "^4.0.1",
@@ -37,9 +37,8 @@
     "@types/express-session": "^1.17.7",
     "@types/http-errors": "^2.0.1",
     "@types/jsonwebtoken": "^9.0.2",
-    "@types/mongoose": "^5.11.97",
     "@types/morgan": "^1.9.4",
-    "@types/node": "^20.1.4",
+    "@types/node": "^20.2.1",
     "@types/passport": "^1.0.12",
     "@types/passport-jwt": "^3.0.9",
     "@types/passport-local": "^1.0.35"

@@ -2,18 +2,18 @@ import express from 'express';
 let router = express.Router();
 import passport from 'passport';
 
-/* Get the famouspeople Controller */
-import { DisplayfamouspeopleList, DisplayfamouspeopleByID, Addfamouspeople, Updatefamouspeople, Deletefamouspeople, ProcessRegistration, ProcessLogin, ProcessLogout  } from '../Controllers/famouspeople';
+/* Get the movie Controller */
+import { DisplayMovieList, DisplayMovieByID, AddMovie, UpdateMovie, DeleteMovie, ProcessRegistration, ProcessLogin, ProcessLogout  } from '../Controllers/movie';
 
-router.get('/list', passport.authenticate('jwt', {session: false}), (req, res, next) => DisplayfamouspeopleList(req, res, next));
+router.get('/list', passport.authenticate('jwt', {session: false}), (req, res, next) => DisplayMovieList(req, res, next));
 
-router.get('/find/:id', passport.authenticate('jwt', {session: false}), (req, res, next) => DisplayfamouspeopleByID(req, res, next));
+router.get('/find/:id', passport.authenticate('jwt', {session: false}), (req, res, next) => DisplayMovieByID(req, res, next));
 
-router.post('/add', passport.authenticate('jwt', {session: false}), (req, res, next) => Addfamouspeople(req, res, next));
+router.post('/add', passport.authenticate('jwt', {session: false}), (req, res, next) => AddMovie(req, res, next));
 
-router.put('/update/:id', passport.authenticate('jwt', {session: false}), (req, res, next) => Updatefamouspeople(req, res, next));
+router.put('/update/:id', passport.authenticate('jwt', {session: false}), (req, res, next) => UpdateMovie(req, res, next));
 
-router.delete('/delete/:id', passport.authenticate('jwt', {session: false}), (req, res, next) => Deletefamouspeople(req, res, next));
+router.delete('/delete/:id', passport.authenticate('jwt', {session: false}), (req, res, next) => DeleteMovie(req, res, next));
 
 // Authentication routes
 router.post('/register', (req, res, next) => ProcessRegistration(req, res, next));

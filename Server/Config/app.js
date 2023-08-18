@@ -19,10 +19,10 @@ const mongoose_1 = __importDefault(require("mongoose"));
 const db_1 = __importDefault(require("./db"));
 mongoose_1.default.connect(db_1.default.remoteURI);
 mongoose_1.default.connection.on('connected', () => {
-    console.log(`Connected to MongoDB`);
+    console.log(`connected to MongoDB`);
 });
 mongoose_1.default.connection.on('disconnected', () => {
-    console.log('Disconnected from MongoDB');
+    console.log(`Disconnected from MongoDB`);
 });
 const index_1 = __importDefault(require("../Routes/index"));
 let app = (0, express_1.default)();
