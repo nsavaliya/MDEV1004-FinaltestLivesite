@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const mongoose_1 = require("mongoose");
-const famouspeople = new mongoose_1.Schema({
+const movie = new mongoose_1.Schema({
     famouspeopleID: { type: String, required: true },
     name: { type: String, required: true },
     occupation: { type: String, required: true },
@@ -12,6 +12,6 @@ const famouspeople = new mongoose_1.Schema({
     achievements: { type: [String], required: true },
     imageURL: { type: String, required: true }
 });
-let Movie = (0, mongoose_1.model)('Famouspeople', famouspeople);
+let Movie = (0, mongoose_1.model)('Movie', movie);
 exports.default = Movie;
 //# sourceMappingURL=movie.js.map

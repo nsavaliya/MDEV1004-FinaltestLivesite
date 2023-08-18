@@ -112,7 +112,6 @@ function DisplayMovieByID(req, res, next) {
 exports.DisplayMovieByID = DisplayMovieByID;
 function AddMovie(req, res, next) {
     try {
-        
         let achievements = SanitizeArray(req.body.achievements);
         let movie = new movie_1.default({
             famouspeopleID: req.body.famouspeopleID,
@@ -148,7 +147,6 @@ exports.AddMovie = AddMovie;
 function UpdateMovie(req, res, next) {
     try {
         let id = req.params.id;
-        
         let achievements = SanitizeArray(req.body.achievements);
         let movieToUpdate = new movie_1.default({
             _id: id,

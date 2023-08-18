@@ -2,7 +2,7 @@ import { Schema, model } from 'mongoose';
 
 //bookID title authors genres country description publicationDate publisher pageCount language ISBN imageURL
 
-interface IFamouspeople {
+interface IMovie {
     famouspeopleID: string,
     name: string,
     occupation: string,
@@ -14,7 +14,7 @@ interface IFamouspeople {
     imageURL: string
 }
 
-const famouspeople = new Schema<IFamouspeople>
+const movie = new Schema<IMovie>
     ({
     famouspeopleID: { type: String, required: true },
     name: { type: String, required: true },
@@ -27,6 +27,6 @@ const famouspeople = new Schema<IFamouspeople>
     imageURL: { type: String, required: true }
     });
 
-let Movie = model<IFamouspeople>('Famouspeople', famouspeople);
+let Movie = model<IMovie>('Movie', movie);
 
 export default Movie;

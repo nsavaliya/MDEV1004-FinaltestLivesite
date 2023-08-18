@@ -1,11 +1,12 @@
 {
   "name": "mdev1004-m2023-finaltest",
   "version": "0.0.8",
-  "description": "this is a demo project for MDEV1004 - Final Test- in the summer 2023 semester at Georgian",
+  "description": "exam for MDEV1004 - Final Test- in the summer 2023 semester at Georgian",
   "author": "Namrata Savaliya",
   "engines": {
     "node": "20.2.0",
-    "npm": "9.5.1"
+    "npm": "9.5.1",
+    "yarn": "1.22.19"
   },
   "scripts": {
     "start": "node server.js"
